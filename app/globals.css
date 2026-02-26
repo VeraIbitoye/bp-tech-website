@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --bp-blue: #0b1f3a;
+  --bp-orange: #f57c00;
+}
+
+body {
+  font-family: var(--font-roboto);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins);
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.25s ease-out;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+/* Subtle background gradient */
+.bg-soft-gradient {
+  background: radial-gradient(
+      circle at top left,
+      rgba(0, 85, 255, 0.08),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(255, 140, 0, 0.08),
+      transparent 40%
+    ),
+    #ffffff;
+}
+
+/* Glass effect cards */
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
