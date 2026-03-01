@@ -12,7 +12,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <Image
-          src="/bplogo.png"
+          src="/bpLogo.png"
           alt="BP Tech and Resources Nigeria Limited"
           width={100}
           height={40}
